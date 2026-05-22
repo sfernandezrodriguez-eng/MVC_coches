@@ -43,6 +43,7 @@ public class Model {
     public int cambiarVelocidad(String matricula, Integer v) {
         // busca el coche
         getCoche(matricula).velocidad = v;
+        System.out.println(" LOG esta haciendose");
         // retorna la nueva velocidad
         return getCoche(matricula).velocidad;
     }
