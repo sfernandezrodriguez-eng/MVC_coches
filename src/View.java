@@ -12,7 +12,7 @@ public class View {
         do {
             System.out.println("\n--- XESTOR COCHES ---");
             System.out.println("1. Engadir Coche");
-            System.out.println("2. Mostrar velocidad");
+            System.out.println("2. Cambiar velocidad");
             System.out.println("3. Salir");
             System.out.print("Selecciona unha opción: ");
 
@@ -44,6 +44,7 @@ public class View {
             }
         } while (opcion != 3);
     }
+
 
     public boolean muestraVelocidad(String matricula, Integer v){
         System.out.println(matricula + ": " + v + "km/hr");

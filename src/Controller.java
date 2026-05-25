@@ -43,7 +43,5 @@ public class Controller {
         int nuevaVelocidad = miModel.cambiarVelocidad(matricula, velocidad);
         boolean hecho = miView.muestraVelocidad(matricula, miModel.getVelocidad(matricula));
         return hecho;
-
-
     }
 }
