@@ -23,8 +23,10 @@ public class View {
                     String modelo = new Scanner(System.in).next();
                     System.out.println("Matricula: ");
                     String matricula = new Scanner(System.in).next();
-                    c.añadirCoche(modelo, matricula);
-                    System.out.println("Se ha añadido correctamente");
+                    boolean a = c.añadirCoche(modelo, matricula);
+                    if (a == true) {
+                    System.out.println("Se ha añadido correctamente");}
+                    else {System.out.println("Algo ha fallado");}
                 }
 
                 case 2 -> {
@@ -33,8 +35,10 @@ public class View {
                     String matricula = new Scanner(System.in).next();
                     System.out.println("Nueva velocidad: ");
                     int velocidad = new Scanner(System.in).nextInt();
-                    c.newVelocidad(matricula,velocidad);
-                    System.out.println("Se ha cambiado correctamente");
+                    boolean a =c.newVelocidad(matricula,velocidad);
+                    if (a == true) {
+                        System.out.println("Se ha cambiado correctamente");}
+                    else {System.out.println("Algo ha fallado");}
 
                 }
 

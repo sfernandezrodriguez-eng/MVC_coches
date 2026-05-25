@@ -1,11 +1,10 @@
 import java.lang.module.ModuleDescriptor;
 
 public class Controller {
-    View miView = new View();
+    static View miView = new View();
     Model miModel = new Model();
 
     public static void main(String[] args) {
-        View miView = new View();
         miView.menu();
 
         /**
@@ -34,9 +33,10 @@ public class Controller {
     }
 
     public boolean añadirCoche(String modelo, String matricula){
-            miModel.crearCoche(modelo,matricula);
-
-            return true;
+            Coche creado =miModel.crearCoche(modelo,matricula);
+            if (creado == miModel.getCoche(matricula)) {
+                return true;}
+            else {return false;}
     }
 
     public boolean newVelocidad(String matricula, int velocidad){
