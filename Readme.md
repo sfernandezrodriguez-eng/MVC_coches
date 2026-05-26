@@ -69,3 +69,8 @@ sequenceDiagram
     View-->>Controller: boolean
     deactivate View
 ```
+
+
+Prueba del javadoc: 
+
+![img.png](img.png)
